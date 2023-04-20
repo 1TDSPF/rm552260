@@ -52,10 +52,56 @@
     <footer class="rodape">
         <h2>Fale Conosco</h2>
         <nav>
-            <a href="#"><img src="./img/social-1.png" alt="logo github"></a>
+            <!--<a href="#"><img src="./img/social-1.png" alt="logo github"></a>
             <a href="#"><img src="./img/social-2.png" alt="logo facebook"></a>
-            <a href="#"><img src="./img/social-3.png" alt="logo Twitter"></a>
+            <a href="#"><img src="./img/social-3.png" alt="logo Twitter"></a>-->
         </nav>
+
+        <div>
+            <form action="index.html" method="get" onsubmit="return true">
+                <fieldset>
+                    <legend>Contatos</legend>
+                    <div>
+                        <label for="idEmail">Email</label>
+                        <input type="Email" name="txtEmail" id="idEmail" placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="idNm">Nome</label>
+                        <input type="text" name="txtNm" id="idNm" placeholder="Nome">
+                    </div>
+                    <div>
+                        <label for="idGrava">Gravar Dados</label>
+                        <input type="checkbox" name="chbGrava" id="idGrava" required>
+                    </div>
+                    <!--<div>
+                        <fieldset>
+                            <legend>Genêro</legend>
+                            <label id="idRdbM">masculino</label>
+                            <input type="radio" name="rdb" id="idRdbM" value="M" checked="checked">
+                            <label id="idRdbF">Feminino</label>
+                            <input type="radio" name="rdb" id="idRdbF" value="F">
+                            <label id="idRdbO">Outros</label>
+                            <input type="radio" name="rdb" id="idRdbO" value="O">
+                        </fieldset>
+                    </div>-->
+                    <div>
+                        <label for="Genêro">Genêro</label>
+                        <select name="selGenêro" id="idGenero">
+                            <option selected="select" value="S">Selecione uma opção</option>
+                            <option value="m">Masculino</option>
+                            <option value="f">Feminino</option>
+                            <option value="o">Outros</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" name="Limpar" required>
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </div>
     </footer>
     
 </body>
