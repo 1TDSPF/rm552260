@@ -70,6 +70,11 @@
                         <input type="text" name="txtNm" id="idNm" placeholder="Nome">
                     </div>
                     <div>
+                        <label for="idPs">Senha</label>
+                        <input type="password" name="txtPass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                        title="Precisa conter no mínimo 8 caracteres, números e letras maiusculas e minusculas">
+                    </div>
+                    <div>
                         <label for="idGrava">Gravar Dados</label>
                         <input type="checkbox" name="chbGrava" id="idGrava" required>
                     </div>
