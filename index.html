@@ -58,49 +58,36 @@
         </nav>
 
         <div>
-            <form action="index.html" method="get" onsubmit="return true">
+            <form action="index.html" method="POST" onsubmit="return true">
                 <fieldset>
-                    <legend>Contatos</legend>
-                    <div>
-                        <label for="idEmail">Email</label>
-                        <input type="Email" name="txtEmail" id="idEmail" placeholder="Email">
+                    <legend>Login</legend>
+                    <div> 
+                        <label for="idEmail">Email</label> 
+                        <input type="email" name="txtEmail" id="idEmail" placeholder="Email" required> 
+                        </div>
+                    <div> 
+                        <label for="idPass">Senha</label> 
+                        <input type="password" name="txtPass" id="idPass" placeholder="Pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Precisa conter no mínimo 8 caractéres e um em maiusculo e pelo menos um em minusculo.">
                     </div>
-                    <div>
-                        <label for="idNm">Nome</label>
-                        <input type="text" name="txtNm" id="idNm" placeholder="Nome" required>
+                    <div> 
+                        <label for="idGrava">Gravar Dados</label> 
+                        <input type="checkbox" name="chbGrava" id="idGrava" value="gravar"> 
                     </div>
-                    <div>
-                        <label for="idPs">Senha</label>
-                        <input type="password" name="txtPass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-                        title="Precisa conter no mínimo 8 caracteres, números e letras maiusculas e minusculas">
-                    </div>
-                    <div>
-                        <label for="idGrava">Gravar Dados</label>
-                        <input type="checkbox" name="chbGrava" id="idGrava" required>
-                    </div>
-                    <!--<div>
+                    <div> 
                         <fieldset>
                             <legend>Genêro</legend>
-                            <label id="idRdbM">masculino</label>
-                            <input type="radio" name="rdb" id="idRdbM" value="M" checked="checked">
-                            <label id="idRdbF">Feminino</label>
-                            <input type="radio" name="rdb" id="idRdbF" value="F">
-                            <label id="idRdbO">Outros</label>
-                            <input type="radio" name="rdb" id="idRdbO" value="O">
-                        </fieldset>
-                    </div>-->
-                    <div>
-                        <label for="idGenêro">Genêro</label>
-                        <select name="selGenêro" id="idGenero">
-                            <option selected="selected" value="S">Selecione uma opção</option>
+                        <select name="selGenero" id="idGenero">
+                            <option selected="selected" value="-">Selecione uma opção</option>
                             <option value="m">Masculino</option>
                             <option value="f">Feminino</option>
                             <option value="o">Outros</option>
-                        </select>
+                        </select> 
+                        </fieldset>
                     </div>
-                    <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" name="Limpar" required>
+                    <div> 
+                        <button type="submit">Login</button> 
+                        <button type="reset">Limpar</button>
                     </div>
 
                 </fieldset>
@@ -108,7 +95,7 @@
 
         </div>
     </footer>
-    
+
 </body>
 
 </html>
