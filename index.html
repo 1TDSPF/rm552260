@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Layout</title>
     <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
@@ -58,15 +59,15 @@
         </nav>
 
         <div>
-            <form action="index.html" method="POST" onsubmit="return true">
+            <form action="index.html" method="POST" onsubmit="return false">
                 <fieldset>
                     <legend>Login</legend>
                     <div> 
-                        <label for="idEmail">Email</label> 
+                        <label class="lbl-txt" for="idEmail">Email</label> 
                         <input type="email" name="txtEmail" id="idEmail" placeholder="Email" required> 
                         </div>
                     <div> 
-                        <label for="idPass">Senha</label> 
+                        <label class="lbl-txt" for="idPass">Senha</label> 
                         <input type="password" name="txtPass" id="idPass" placeholder="Pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                             title="Precisa conter no mínimo 8 caractéres e um em maiusculo e pelo menos um em minusculo.">
                     </div>
@@ -85,8 +86,8 @@
                         </select> 
                         </fieldset>
                     </div>
-                    <div> 
-                        <button type="submit">Login</button> 
+                    <div class="btn"> 
+                        <button onclick="document.write('Olá Mundo')" type="submit">Login</button> 
                         <button type="reset">Limpar</button>
                     </div>
 
@@ -95,6 +96,23 @@
 
         </div>
     </footer>
+
+    <!--
+    <script>
+        // Declarando variaveis com a palavra reservada VAR
+        var nr1 = 10;
+        var nr2 = 5;
+        //soma
+        console.log("Soma: " + (nr1 + nr2))
+        //subtração
+        console.log("Subtração: " + (nr1 - nr2))
+        //divisão
+        console.log("Resultado divisão: " + (nr1 / nr2))
+        //Resto da divisão
+        console.log("Resultado do resto divisão: " + (nr1 % nr2))
+        //
+    </script>
+    -->
 
 </body>
 
