@@ -93,3 +93,51 @@
 //console.log("Item que estava antes da remoção: " + frutas[indice]);
 //frutas.splice(indice,1);
 //console.log("Item que ficou no local depois da remoção: " + frutas[indice]);
+
+
+//let nr1 = [1,2,3,4,5];
+//let nr2 = [6,7,8,9,10];
+
+//console.log(nr1);
+//console.log(nr2);
+
+// CONCATENANDO ARRAYS
+
+//let nr3 = [nr1,nr2];
+///console.log("NOVO ARRAY: "+ nr3);
+
+//nr3.forEach((nr) => {
+//    nr.forEach((n) => {
+//        console.log("Item do novo array: " + n)
+//    })
+//})
+
+//let nr3 = [...nr1,...nr2];
+//nr3.forEach((nr) => {
+//            console.log("Item do novo array: " + nr)
+//})
+
+//convertendo HTMLcollections em arrays
+
+//const imgElements = document.getElementsByTagName("img");
+////console.log(imgElements);
+//
+//const imgElementsArray = [...imgElements];
+//imgElementsArray.forEach((img) =>{
+//    img.setAttribute("width", "50px");
+//});
+
+
+//recupere uma collection de elementos do tipo ( a ).
+//Identifique aqueles que são pertencentes somente ao cabeçalho e adicione o atributo style com a propriedade background-color: #ff0000;
+//Tire um print do código e da página alterada e envie no chat;
+
+const aElements = [...document.getElementsByTagName("a")];
+
+aElements.forEach((a) => {
+    let textoDoA = a.textContent;
+
+    if(textoDoA == "Home" || textoDoA == "Info" || textoDoA == "Item-3"){
+            a.setAttribute("style", "background-color:#ff0000")
+    }
+})
