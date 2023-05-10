@@ -21,7 +21,7 @@ const btn2 = document.getElementById("btn2");
 const imagem = document.getElementById("imagem");
 btn2.addEventListener("click", function(){
     const imagem1 = imagem.getAttribute("src");
-    const img2 = imagem1 === "imagem1.jpg" ? "imagem2.jpg" : "imagem1.jpg";
+    const img2 = imagem1 === "./imagem1.jpg" ? "./imagem2.jpg" : "./imagem1.jpg";
     imagem.setAttribute("src", img2);
 });
 
