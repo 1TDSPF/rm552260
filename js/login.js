@@ -46,8 +46,15 @@ addEventListener("click", (evt)=>{
                 msgStatus.setAttribute("style", "color:#ff0000;")
                 msgStatus.innerHTML = "<span><strong>Usuario ou senha incorreto!</strong></span>";
             }
-            console.log();
         }
         
+    }else if(evt.target.className="fa fa-eye" || evt.target.className="fa fa-eye-slash"){
+        if(inputPass.getAttribute("type") == "password"){
+            inputPass.setAttribute("type","text");
+            evt.target.setAttribute("class","fa fa-eye-slash");
+        }else{
+            inputPass.setAttribute("type","password");
+            evt.target.setAttribute("class","fa fa-eye");
+        }
     }
 });
